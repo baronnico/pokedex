@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function PokemonCard(props) {
   let pokemon = props.pokemon;
   let condition = pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="Bulbasaur"/> : <p>???</p>;
@@ -7,5 +9,11 @@ function PokemonCard(props) {
 
     }
 
+PokemonCard.propTypes ={
+  pokemonList: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string,
+  }).isRequired,
+}
 
 export default PokemonCard;
