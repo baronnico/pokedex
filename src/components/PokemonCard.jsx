@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function PokemonCard(props) {
-  let pokemon = props.pokemon;
+  let pokemon = props.pokemonList[props.pokemonIndex];
   let condition = pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="Bulbasaur"/> : <p>???</p>;
    
     return <figure>{condition}</figure>;
