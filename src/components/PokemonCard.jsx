@@ -7,7 +7,7 @@ function PokemonCard(props) {
     return <figure>{condition}</figure>;
     <figcaption>bulbasaur</figcaption>
 
-    }
+  }
 
 PokemonCard.propTypes ={
   pokemonList: PropTypes.arrayOf(PropTypes.shape({
