@@ -44,6 +44,8 @@ const pokemonList = [
   },
   {
     name: "mew",
+    imgSrc:
+    "https://th.bing.com/th/id/OIP.7bz0ZI0lKDkdIIWvSD_2AwHaHh?w=186&h=190&c=7&r=0&o=5&dpr=2.3&pid=1.7",
   },
 ];
 export default App
